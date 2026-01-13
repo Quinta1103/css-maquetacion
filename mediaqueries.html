@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body {
+            background-color: aquamarine;
+        }
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            background-image: url("images/taller\ coche\ movil.jpg");
+            background-position: center center;
+        }
+        header h1 {
+            color: orange;
+            text-shadow: 3px 3px 3px black;
+        }
+        nav {
+            background-color: blue;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            border-bottom: 2px solid white;
+            padding: 10px;
+            font-size: 2em;
+        }
+        nav a:hover {
+            color: yellow;
+            font-weight: bold;
+            background-color: brown;
+        }
+        @media screen and (min-width:768px) {
+            body {
+                background-color: lightpink;
+            }
+            header {
+                background-image: url("images/taller.jpeg");
+            }
+            nav {
+                display: flex;
+                justify-content: space-around;
+
+            }
+            nav a {
+                display: inline;
+                border-bottom: 0px solid transparent
+            }
+        }
+        @media screen and (min-width:1200px) {
+            body {
+                background-color: lightyellow;
+            }
+        }
+        #contenedor-quienes-somos {
+            display: flex;
+            justify-content: space-around;
+        }
+        #contenedor-quienes-somos p {
+            font-size: 2.5em;
+            width: 45%;
+        }
+        #contenedor-quienes-somos img {
+            width: 45%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Bosco Business
+        </h1>
+    </header>
+    <nav>
+        <a href="#quienes">Quienes Somos</a>
+        <a href="#donde-estamos">Dónde estamos</a>
+        <a href="#nuestros-clientes">Nuestros Clientes</a>
+    </nav>
+    <section id="quienes">
+        <h1 class="título">
+            Quienes Somos
+        </h1>
+        <div id="contenedor-quienes-somos">
+            <img src="images/mecanico.jpg" alt="">
+            <p>
+                Somos una empresa revolucionaria Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, molestiae veritatis aut quos, repellendus iste molestias beatae perspiciatis rerum et officia eaque dignissimos deleniti eveniet inventore, nesciunt explicabo saepe sint.
+            </p>
+        </div>
+    </section>
+    <h1>Media Queries</h1>
+</body>
+</html>
