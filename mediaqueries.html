@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/59161ea55d.js" crossorigin="anonymous"></script>
     <style>
         * {
             box-sizing: border-box;
@@ -41,7 +42,48 @@
             font-weight: bold;
             background-color: brown;
         }
+        #contenedor-quienes-somos {
+            display: flex;
+            justify-content: space-around;
+        }
+        #contenedor-quienes-somos p {
+            font-size: 2.5em;
+            width: 45%;
+        }
+        #contenedor-quienes-somos img {
+            width: 45%;
+        }
+        #nuestros-servicios {
+            background-color: white;
+        }
+        .servicio {
+            color: blue;
+            text-align: center;
+            border: 2px solid blue;
+            border-radius: 10px;
+            font-size: 4em;
+            padding: 10px;
+            width: 100%;
+        }
+        .servicio:hover {
+            color: red;
+            background-color: antiquewhite;
+            opacity: 0,1;
+        }
+        .título {
+            text-align: center;
+            font-size: 3.2em;
+        }
         @media screen and (min-width:768px) {
+            #contenedor-nuestros-servicios {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            .servicio {
+                width: 45%;
+            }
+
             body {
                 background-color: lightpink;
             }
@@ -59,20 +101,13 @@
             }
         }
         @media screen and (min-width:1200px) {
+            .servicio {
+                width: 30%;
+            }
+
             body {
                 background-color: lightyellow;
             }
-        }
-        #contenedor-quienes-somos {
-            display: flex;
-            justify-content: space-around;
-        }
-        #contenedor-quienes-somos p {
-            font-size: 2.5em;
-            width: 45%;
-        }
-        #contenedor-quienes-somos img {
-            width: 45%;
         }
     </style>
 </head>
@@ -96,6 +131,35 @@
             <p>
                 Somos una empresa revolucionaria Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, molestiae veritatis aut quos, repellendus iste molestias beatae perspiciatis rerum et officia eaque dignissimos deleniti eveniet inventore, nesciunt explicabo saepe sint.
             </p>
+        </div>
+    </section>
+    <section id="nuestros-servicios">
+        <h1 class="título">Nuestros Servicios</h1>
+        <div id="contenedor-nuestros-servicios">
+            <div class="servicio">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <p>Servicio técnico</p>
+            </div>
+            <div class="servicio">
+                <i class="fa-solid fa-phone"></i>
+                <p>Atención telefónica</p>
+            </div>
+            <div class="servicio">
+                <i class="fa-solid fa-truck"></i>
+                <p>Servicio a domicilio</p>
+            </div>
+            <div class="servicio">
+                <i class="fa-solid fa-car"></i>
+                <p>Vehículo de sustitución</p>
+            </div>
+            <div class="servicio">
+                <i class="fa-solid fa-broom"></i>
+                <p>Limpiado de coches</p>
+            </div>
+            <div class="servicio">
+                <i class="fa-solid fa-circle-info"></i>
+                <p>Más información</p>
+            </div>
         </div>
     </section>
     <h1>Media Queries</h1>
